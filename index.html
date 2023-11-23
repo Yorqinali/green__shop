@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenshop</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/x-icon" />
+  </head>
+
+  <body id="body">
+
+
+    <dialog id="modal" moddal class="modal flex-direction flex-center">
+      <img
+        id="close"
+        class="modal-close"
+        src="./assets/icons/close.svg"
+        alt=""
+      />
+      <form
+        class="flex-direction"
+      
+      >
+        <div class="login-title-box flex-center">
+          <p class="login-title">Login</p>
+          <p>Register</p>
+        </div>
+
+        <!-- register -->
+        <div class="flex-direction" id="register-box">
+          <label class="modal-label" for="email">
+            Enter your username and password to login.
+          </label>
+          <input
+            class="modal-input"
+            name="name"
+            type="name"
+            placeholder="enter your name"
+          />
+          <input
+            class="modal-input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+          <input
+            class="modal-input"
+            name="password"
+            type="password"
+            placeholder="enter your password"
+          />
+          <button type="submit" class="login-btn2">Register</button>
+
+          <div class="or-login-with reg">
+            <p>Or register with</p>
+          </div>
+          <button type="submit" class="login-btn google flex-center">
+            <img src="./assets/icons/google-icon.svg" alt="" /> Login with
+            Google
+          </button>
+          <button type="submit" class="login-btn facebook flex-center">
+            <img
+              width="20"
+              src="./assets/icons/facebook 1.svg"
+              alt="dsffdsdfs"
+            />
+            Login with Facebook
+          </button>
+        </div>
+        <div id="login-box" class="flex-direction">
+          <label class="modal-label" for="email">
+            Enter your username and password to login.
+          </label>
+          <input
+            class="modal-input"
+            id="email"
+            type="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+          <input
+            class="modal-input"
+            name="password"
+            type="password"
+            placeholder="enter your password"
+          />
+
+          <a href="#" class="forgot">Forgot your password?</a>
+          <button type="submit" class="login-btn2">Login</button>
+        </div>
+      </form>
+    </dialog>
+
+
+
+    <header>
+      <nav>
+        <div class="container">
+          <div class="wrapper flex-between">
+            <a href="#">
+              <img src="./assets/icons/logo.svg" alt="Greenshop logotip" />
+            </a>
+            <div class="nav-list flex">
+              <div><a href="#">Home</a></div>
+              <div><a href="#">Shop</a></div>
+              <div><a href="#">Plant Care</a></div>
+              <div><a href="#">Blogs</a></div>
+            </div>
+            <div class="nav-login flex">
+              <a href="#">
+                <img src="./assets/icons/lupa.svg" alt="Lupa ikonka" />
+              </a>
+              <a href="#" class="badge-parent">
+                <span class="badge">0</span>
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M14.294 16.8745H8.24077C5.65655 16.8745 3.55412 14.7721 3.55412 12.1879V7.38404C3.55412 4.98174 2.35676 2.75812 0.351225 1.43578C-0.00894369 1.19832 -0.108379 0.71388 0.129078 0.353711C0.366535 -0.00649689 0.850939 -0.105971 1.21119 0.131564C2.35606 0.886427 3.28487 1.88203 3.94905 3.0283C4.09258 3.1891 5.24995 4.41583 7.14726 4.41583H16.142C18.596 4.36994 20.5168 6.83265 19.8752 9.20136L18.8397 13.3283C18.3159 15.4163 16.4466 16.8745 14.294 16.8745ZM4.91926 5.53676C5.04912 6.13669 5.11634 6.75528 5.11634 7.38404V12.1879C5.11634 13.9107 6.51796 15.3123 8.24077 15.3123H14.294C15.7291 15.3123 16.9752 14.3401 17.3245 12.9482L18.3599 8.8212C18.7412 7.41372 17.5997 5.95082 16.142 5.97804H7.14722C6.28913 5.97804 5.54224 5.79304 4.91926 5.53676ZM7.85021 19.0226C7.85021 18.4833 7.41307 18.0462 6.87383 18.0462C5.57828 18.0978 5.57942 19.9479 6.87383 19.9989C7.41307 19.9989 7.85021 19.5618 7.85021 19.0226ZM15.6222 19.0226C15.6222 18.4833 15.1851 18.0462 14.6459 18.0462C13.3503 18.0978 13.3514 19.9479 14.6459 19.9989C15.1851 19.9989 15.6222 19.5618 15.6222 19.0226ZM16.9231 8.32137C16.9231 7.88996 16.5734 7.54026 16.142 7.54026H7.45966C6.42329 7.5815 6.42407 9.06158 7.45966 9.10248H16.142C16.5734 9.10248 16.9231 8.75277 16.9231 8.32137Z"
+                    fill="#3D3D3D"
+                  />
+                </svg>
+              </a>
+              <a id="open" class="login-btn flex" href="#">
+                <svg
+                  class="login-icon"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.1601 10.1006H8.12598"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M15.7212 7.67059L18.1612 10.1006L15.7212 12.5306"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M13.6342 6.35823C13.3592 3.3749 12.2425 2.29156 7.80082 2.29156C1.88332 2.29156 1.88332 4.21656 1.88332 9.9999C1.88332 15.7832 1.88332 17.7082 7.80082 17.7082C12.2425 17.7082 13.3592 16.6249 13.6342 13.6416"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Login
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div class="hero-wrapper flex-center">
+            <div class="hero-right">
+              <p class="welcome">Welcome to GreenShop</p>
+              <h1 class="hero-title">
+                Let's Make a Better <span>Planet</span>
+              </h1>
+              <p class="hero-desc">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants. Use our plants to create an unique Urban Jungle.
+                Order your favorite plants!
+              </p>
+              <button class="hero-btn">SHOP NOW</button>
+            </div>
+            <img src="./assets/images/hero-gul.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="main-wrapper">
+            <div class="sidebar">
+              <h3 class="sidebar-section-title">Categories</h3>
+              <ul id="categ-list"></ul>
+              <h3 class="sidebar-section-title second">Price Range</h3>
+              <div class="price-box">
+                <input class="input-range" type="range" />
+                <p class="price-title">Price: <span>$100 - 500$</span></p>
+                <button class="hero-btn main-btn">Filter</button>
+              </div>
+
+              <h3 class="sibear-section-title third">Size</h3>
+              <ul>
+                <li class="sidebar-items">
+                  <a href="#">
+                    <span class="item-title">Small </span>
+                    <span class="item-count">(119)</span>
+                  </a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">
+                    <span class="item-title">Medium</span>
+                    <span class="item-count">(86)</span>
+                  </a>
+                </li>
+                <li class="sidebar-items">
+                  <a href="#">
+                    <span class="item-title">Large </span>
+                    <span class="item-count">(78)</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="reklama">
+                <img src="./assets/images/reklama.png" alt="reklama" />
+              </div>
+            </div>
+            <div class="content">
+              <div class="content-nav">
+                <div class="content-nav-first">
+                  <a class="all-plants" href="#all-plants">All plants</a>
+                  <a class="new-arrivals" href="#new-arrivals">New Arrivals</a>
+                  <a class="sale" href="#sale">Sale</a>
+                </div>
+                <div class="sort-by">
+                  Short by:
+                  <select class="sort-by-select" name="" id="">
+                    <option value="">Cheap</option>
+                    <option value="">Expensive</option>
+                    <option value="">Beautiful</option>
+                  </select>
+                </div>
+              </div>
+              <div class="new-arrivals-box" id="new-arrivals"></div>
+              <div class="sale-box" id="sale"></div>
+              <div class="all-plants-box" id="all-plants"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="numbers-wrapper">
+            <div class="numbers">1</div>
+            <div class="numbers">2</div>
+            <div class="numbers">3</div>
+            <div class="numbers">4</div>
+            <div class="numbers">></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="about-plants-wrapper">
+            <div class="about-plants-start">
+              <img
+                class="about-plants-images1"
+                src="./assets/images/flower2.png"
+                alt=""
+              />
+              <h2 class="about-section-title">Summer cactus & succulents</h2>
+              <p class="about-section-desc">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants
+              </p>
+              <a class="about-section-btn" href="#">Find More &#10140;</a>
+            </div>
+            <div class="about-plants-end">
+              <img
+                class="about-plants-images"
+                src="./assets/images/flower2.png"
+                alt=""
+              />
+              <h2 class="about-section-title">Styling Trends & much more</h2>
+              <p class="about-section-desc">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants
+              </p>
+              <a class="about-section-btn" href="#">Find More &#10140;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container">
+          <div class="our-blog-wrapper">
+            <div class="our-blog-start">
+              <h2 class="our-blog-title">Our Blog Posts</h2>
+              <p class="our-blog-desc">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
+            <ul class="our-blog-list">
+              <li class="our-blog-item">
+                <img
+                  src="./assets/images/01.svg"
+                  alt=""
+                  class="our-blog-item-img"
+                />
+                <span class="our-blog-item-time"
+                  >September 12 I Read in 6 minutes</span
+                >
+                <h3 class="our-blog-item-title">
+                  Cactus & Succulent Care Tips
+                </h3>
+                <p class="our-blog-item-desc">
+                  Cacti are succulents are easy care plants for any home or
+                  patio.
+                </p>
+                <a class="our-blog-item-link" href="#"> Read More ➞ </a>
+              </li>
+              <li class="our-blog-item">
+                <img
+                  src="./assets/images/02.svg"
+                  alt=""
+                  class="our-blog-item-img"
+                />
+                <span class="our-blog-item-time"
+                  >September 13 I Read in 2 minutes</span
+                >
+                <h3 class="our-blog-item-title">
+                  Cactus & Succulent Care Tips
+                </h3>
+                <p class="our-blog-item-desc">
+                  Cacti are succulents are easy care plants for any home or
+                  patio.
+                </p>
+                <a class="our-blog-item-link" href="#"> Read More ➞ </a>
+              </li>
+              <li class="our-blog-item">
+                <img
+                  src="./assets/images/03.svg"
+                  alt=""
+                  class="our-blog-item-img"
+                />
+                <span class="our-blog-item-time"
+                  >September 15 I Read in 3 minutes</span
+                >
+                <h3 class="our-blog-item-title">
+                  Cactus & Succulent Care Tips
+                </h3>
+                <p class="our-blog-item-desc">
+                  Cacti are succulents are easy care plants for any home or
+                  patio.
+                </p>
+                <a class="our-blog-item-link" href="#"> Read More ➞ </a>
+              </li>
+              <li class="our-blog-item">
+                <img
+                  src="./assets/images/04.svg"
+                  alt=""
+                  class="our-blog-item-img"
+                />
+                <span class="our-blog-item-time"
+                  >September 15 I Read in 2 minutes</span
+                >
+                <h3 class="our-blog-item-title">
+                  Cactus & Succulent Care Tips
+                </h3>
+                <p class="our-blog-item-desc">
+                  Cacti are succulents are easy care plants for any home or
+                  patio.
+                </p>
+                <a class="our-blog-item-link" href="#"> Read More ➞ </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="flex">
+          <div class="footer-cards flex">
+            <div class="footer-card">
+              <img
+                src="./assets/images/footer-card1.png"
+                alt="img"
+                class="footer-card-img"
+              />
+              <h5 class="footer-card-h5">Garden Care</h5>
+              <p class="footer-card-p">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
+            <div class="footer-card">
+              <img
+                src="./assets/images/footer-card2.png"
+                alt="img"
+                class="footer-card-img"
+              />
+              <h5 class="footer-card-h5">Plant Renovation</h5>
+              <p class="footer-card-p">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
+            <div class="footer-card">
+              <img
+                src="./assets/images/footer-card3.png"
+                alt="img"
+                class="footer-card-img"
+              />
+              <h5 class="footer-card-h5">Watering Graden</h5>
+              <p class="footer-card-p">
+                We are an online plant shop offering a wide range of cheap and
+                trendy plants.
+              </p>
+            </div>
+          </div>
+          <div class="news">
+            <h5 class="news-h5">Would you like to join newsletters?</h5>
+            <div class="flex">
+              <input
+                type="email"
+                placeholder="enter your email address..."
+                class="news-input"
+              />
+              <button class="news-button">Join</button>
+            </div>
+            <p class="news-p">
+              We usually post offers and challenges in newsletter. We're your
+              online houseplant destination. We offer a wide range of
+              houseplants and accessories shipped directly from our (green)house
+              to yours!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="locationss flex">
+          <img
+            src="./assets/icons/logo.svg"
+            alt="Greenshop logotip"
+            class="footer-logo"
+          />
+          <img src="./assets/icons/Location.svg" alt="icon" />
+          <p class="location">
+            70 West Buckingham Ave. <br />
+            Farmingdale, NY 11735
+          </p>
+          <img src="./assets/icons/Message.svg" alt="icon" />
+          <p class="footr-email">contact@greenshop.com</p>
+          <img src="./assets/icons/Calling.svg" alt="icon" />
+          <p class="tell">+88 01911 717 490</p>
+        </div>
+      </div>
+      <div class="container flex">
+        <div class="footer-acc">
+          <h5 class="footer-account-h5">My Account</h5>
+          <a href="#" class="footer-a">My Account</a>
+          <a href="#" class="footer-a">Our stores</a>
+          <a href="#" class="footer-a">Contact us</a>
+          <a href="#" class="footer-a">Career</a>
+          <a href="#" class="footer-a">Specials</a>
+        </div>
+        <div class="footer-acc">
+          <h5 class="footer-account-h5">Help & Guide</h5>
+          <a href="#" class="footer-a">Help Center</a>
+          <a href="#" class="footer-a">How to Buy</a>
+          <a href="#" class="footer-a">Shipping & Delivery</a>
+          <a href="#" class="footer-a">Product Policy</a>
+          <a href="#" class="footer-a">How to Return</a>
+        </div>
+        <div class="footer-acc">
+          <h5 class="footer-account-h5">Categories</h5>
+          <a href="#" class="footer-a">House Plants</a>
+          <a href="#" class="footer-a">Potter Plants</a>
+          <a href="#" class="footer-a">Seeds</a>
+          <a href="#" class="footer-a">Small Plants</a>
+          <a href="#" class="footer-a">Accessories</a>
+        </div>
+        <div class="social-media">
+          <h5 class="footer-account-h5">Social Media</h5>
+          <div class="socials">
+            <a href="#" class="social-a"
+              ><img src="./assets/icons/facebook.svg" alt="icon"
+            /></a>
+            <a href="#" class="social-a"
+              ><img src="./assets/icons/instagram.svg" alt="icon"
+            /></a>
+            <a href="#" class="social-a"
+              ><img src="./assets/icons/twitter.svg" alt="icon"
+            /></a>
+            <a href="#" class="social-a"
+              ><img src="./assets/icons/linkedin.svg" alt="icon"
+            /></a>
+            <a href="#" class="social-a"
+              ><img src="./assets/icons/youtube.svg" alt="icon"
+            /></a>
+          </div>
+          <h5 class="footer-account-h5">We accept</h5>
+          <img src="./assets/icons/paypal.svg" alt="img" class="paypalll" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="footer-p">© 2021 GreenShop. All Rights Reserved.</div>
+      </div>
+    </footer>
+    <script src="./js/mockData.js"></script>
+    <script src="./js/categories.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
